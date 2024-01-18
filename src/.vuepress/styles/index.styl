@@ -1,0 +1,50 @@
+/**
+ * Custom Styles here.
+ *
+ * ref：https://v1.vuepress.vuejs.org/config/#index-styl
+ */
+
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 128px;
+
+  &__h1 {
+    font-weight: 600;
+  }
+  &__h2 {
+    font-weight: 500;
+    border: unset;
+    padding: unset;
+  }
+  &__h3 { 
+    font-weight: 400; 
+  }
+  text-align: center;
+}
+
+.h {
+  opacity: 0;
+  padding-top: 128px;
+}
+
+.appear {
+  animation-name: fadeIn;
+  animation-delay: .3s;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  transition: .3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    padding-top: 128px;
+  }
+  100% {
+    opacity: 1;
+    padding-top: 1px;
+  }
+}
